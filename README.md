@@ -1,5 +1,5 @@
 # 3D-Library-for-QB64
-Simple to use 3d library for qb64. Uses map triangle to display polygons. Supports loading of wavefront obj files and texture mapping.
+Simple to use 3d library for qb64. Uses map triangle to display polygons. Load multiple 3d objects and move a camera. Supports loading of wavefront obj files and texture mapping.
 
 # Subs and functions:
 * loadObj (filename AS STRING) load a WAVEFRONT obj file, returns the ID of the object as an integer to be used for the 3d commands
