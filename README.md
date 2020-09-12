@@ -1,2 +1,27 @@
 # 3D-Library-for-QB64
-simple to use 3d library for qb64
+simple to use 3d library for qb64. Uses map triangle to display polygons. Supports loading of wavefront obj files and texture mapping.
+
+subs and functions:
+loadObj (filename AS STRING) load an WAVEFRONT obj file, returns the ID of the object as an integer to be used for the 3d commands
+createTexture (filename AS STRING, image_array() AS LONG) loads and creatures the texture for 3d objects. Provide an 1D array where the textures will be generated and stored
+DISPOBJ (objid AS INTEGER, texture() AS LONG) display the 3d object, provide an object id and texture array that was created using createTexture()
+SETOBJHIDDEN (objid AS INTEGER, n AS INTEGER) Set to 0 for object to be hidden, set to 1 to be rendered
+SETOBJX (objid AS INTEGER, x AS FLOAT) set object x coord on the 3d plane
+SETOBJY (objid AS INTEGER, y AS FLOAT) set object y coord on the 3d plane
+SETOBJZ (objid AS INTEGER, z AS FLOAT) set object z coord on the 3d plane
+SETOBJPOS (objid AS INTEGER, x AS FLOAT, y AS FLOAT, z AS FLOAT) set object x y z coord on the 3d plane
+SETOBJROT (objid AS INTEGER, xr AS FLOAT, yr AS FLOAT, zr AS FLOAT) set object x, y, z rotation
+ROTATEOBJX (objid AS INTEGER, deg AS FLOAT) rotate the object on its x axis by degrees
+ROTATEOBJY (objid AS INTEGER, deg AS FLOAT) rotate the object on its y axis by degrees
+ROTATEOBJZ (objid AS INTEGER, deg AS FLOAT) rotate the object on its z axis by degrees
+MOVEOBJX (objid AS INTEGER, n AS FLOAT) move object x position by n
+MOVEOBJY (objid AS INTEGER, n AS FLOAT) move object y position by n
+MOVEOBJZ (objid AS INTEGER, n AS FLOAT) move object z position by n
+SETOBJSCALE (objid AS INTEGER, x AS FLOAT, y AS FLOAT, z AS FLOAT) set object xyz scale. set all to 1 for original size. 
+ROTATECAMX (deg AS FLOAT) rotate the camera x by degrees
+ROTATECAMY (deg AS FLOAT) rotate the camera y by degrees
+ROTATECAMZ (deg AS FLOAT) rotate the camera z by degrees
+MOVECAMX (n AS FLOAT) move cam x position
+MOVECAMY (n AS FLOAT) move cam y position
+MOVECAMZ (n AS FLOAT) move cam z position
+
