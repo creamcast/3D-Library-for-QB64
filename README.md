@@ -1,6 +1,10 @@
 # 3D-Library-for-QB64
 Simple to use 3d library for qb64. Uses map triangle to display polygons. Load multiple 3d objects and move a camera. Supports loading of wavefront obj files and texture mapping.
 
+![screen](https://raw.githubusercontent.com/creamcast/3D-Library-for-QB64/master/screenshot1.png "sample 1")
+
+![screen](https://raw.githubusercontent.com/creamcast/3D-Library-for-QB64/master/screenshot2.png "sample 2")
+
 # Subs and functions:
 * loadObj (filename AS STRING) load a WAVEFRONT obj file, returns the ID of the object as an integer to be used for the 3d commands
 * createTexture (filename AS STRING, image_array() AS LONG) loads and creatures the texture for 3d objects. Provide an 1D array where the textures will be generated and stored
