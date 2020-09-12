@@ -2,7 +2,7 @@
 Simple to use 3d library for qb64. Uses map triangle to display polygons. Supports loading of wavefront obj files and texture mapping.
 
 # Subs and functions:
-* loadObj (filename AS STRING) load an WAVEFRONT obj file, returns the ID of the object as an integer to be used for the 3d commands
+* loadObj (filename AS STRING) load a WAVEFRONT obj file, returns the ID of the object as an integer to be used for the 3d commands
 * createTexture (filename AS STRING, image_array() AS LONG) loads and creatures the texture for 3d objects. Provide an 1D array where the textures will be generated and stored
 * DISPOBJ (objid AS INTEGER, texture() AS LONG) display the 3d object, provide an object id and texture array that was created using createTexture()
 * SETOBJHIDDEN (objid AS INTEGER, n AS INTEGER) Set to 0 for object to be hidden, set to 1 to be rendered
