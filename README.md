@@ -5,6 +5,8 @@ Simple to use 3d library for qb64. Uses map triangle to display polygons. Simple
 
 ![screen](https://raw.githubusercontent.com/creamcast/3D-Library-for-QB64/master/screenshot2.png "sample 2")
 
+![screen](https://raw.githubusercontent.com/creamcast/3D-Library-for-QB64/master/screenshot3.png "sample 3")
+
 # Subs and functions:
 * loadObj (filename AS STRING) load a WAVEFRONT obj file, returns the ID of the object as an integer to be used for the 3d commands
 * createTexture (filename AS STRING, image_array() AS LONG) loads and creatures the texture for 3d objects. Provide an 1D array where the textures will be generated and stored
